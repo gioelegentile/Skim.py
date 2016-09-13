@@ -1,5 +1,7 @@
 # Skim.py
-Skimpy is a web application builded with:
+Skimpy is a web application with which you can shorten URLs and view some statistics on the shortened URL, such us clicks, origin of clicks, top 10 shortened URLs clicked.
+
+It's builded with:
 
 - Spark Java (back-end API)
 - AngularJS (web client)
@@ -14,8 +16,8 @@ Skimpy is a web application builded with:
 ```sh
 git clone https://github.com/gioelegentile/Skim.py
 cd  Skim.py
-docker build -t gruppo_pbdmng-5/skim.py . 
-docker run -d -p 8080:8080 -p 27017:27017 --name=skim.py gruppo_pbdmng-5/skim.py
+docker build -t skim.py . 
+docker run -d -p 8080:8080 -p 27017:27017 --name=skim.py skim.py
 docker exec -it skim.py bash
 ./start
 ```
