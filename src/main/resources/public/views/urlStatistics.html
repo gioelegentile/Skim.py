@@ -1,0 +1,62 @@
+<script src="/js/ng-google-chart.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/scripts/charts.js"></script>
+
+<div class="card-panel">
+    <div class="left-align grey-text text-darken-1" style="display:inline-block;vertical-align:middle">
+        <p class ng-model="shortURL" id="shortURL" style="margin:0;font-size:1.70rem;">
+            {{shortURL}}
+        </p>
+        <a target="_blank" ng-href="{{longURL}}" class="blue-text text-lighten-1" style="margin:0;font-size:1.10rem;"
+           ng-model="longURL">
+            {{longURL}}
+        </a>
+    </div>
+    <div class="right" style="display:inline-block;vertical-align:middle">
+        <p class="orange-text" style="display:inline-block;font-size:1rem;">Total clicks: </p>
+
+        <p class="orange-text" ng-model="total_clicks" style="display:inline-block;font-size:1.70rem;margin:0;">
+            {{total_clicks}}
+        </p>
+    </div>
+</div>
+
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Countries</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="geoChart" style="height: 400px;"></div>
+    </div>
+</div>
+
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Browsers</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="browserChart" style="height: 300px;"></div>
+    </div>
+</div>
+
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Platforms</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="platformChart" style="height: 300px;"></div>
+    </div>
+</div>

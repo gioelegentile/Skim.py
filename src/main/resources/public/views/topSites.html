@@ -1,0 +1,77 @@
+<script src="/js/materialize.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/scripts/charts.js"></script>
+
+<div class="card-panel">
+    <table>
+        <thead>
+        <tr>
+            <th data-field="pos" class="orange-text" style="padding-top: 0;">Position</th>
+            <th data-field="site" class="orange-text" style="padding-top: 0;">Site</th>
+            <th data-field="clicks" class="orange-text right" style="padding-top: 0;">Clicks</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="site in sites track by $index">
+            <td style="padding-bottom: 0;">{{$index + 1}}</td>
+            <td style="padding-bottom: 0;"><a ng-href="{{site.longURL}}">{{site.longURL}}</a></td>
+            <td class="right" style="padding-bottom: 0;">{{site.click}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Countries</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="geoChart" style="height: 400px;"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Most used browser</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="browserChart" style="height: 300px;"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="card-panel">
+    <div>
+        <h4 class="header orange-text" style="margin-top: 0;">Most used platform</h4>
+        <hr>
+    </div>
+    <br>
+
+    <div class="center-align">
+        <div google-chart chart="platformChart" style="height: 300px;"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="card-panel orange darken-3">
+    <div>
+        <h4 class="header white-text" style="margin-top: 0;">Total sites shortened</h4>
+        <hr style="border-color: white; background-color: white">
+    </div>
+    <div>
+        <b><h4 style="margin-bottom:0;"class="header white-text center" ngModel="totalClicks">{{totalClicks}}</h4></b>
+    </div>
+</div>
