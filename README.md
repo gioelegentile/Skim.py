@@ -1,5 +1,9 @@
 # Skim.py
+Skimpy is a web application builded with:
 
+- Spark Java (back-end API)
+- AngularJS (web client)
+- MongoDB running with docker
 
 ### Installation
 
@@ -8,7 +12,7 @@
 
 
 ```sh
-git clone https://github.com/GruppoPBDMNG-5/Skim.py
+git clone https://github.com/gioelegentile/Skim.py
 cd  Skim.py
 docker build -t gruppo_pbdmng-5/skim.py . 
 docker run -d -p 8080:8080 -p 27017:27017 --name=skim.py gruppo_pbdmng-5/skim.py
