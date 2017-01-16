@@ -3,9 +3,11 @@ Skimpy is a web application with which you can shorten URLs and view some statis
 
 It's builded with:
 
-- Spark Java (back-end API)
-- AngularJS (web client)
-- MongoDB running with docker
+- Java ([Spark RESP API](http://sparkjava.com/)) 
+- AngularJS 1 (client Javascript framework)
+- [MongoDB](https://www.mongodb.com) (data)
+- [Docker](https://www.docker.com/) (deployment)
+
 
 ### Installation
 
