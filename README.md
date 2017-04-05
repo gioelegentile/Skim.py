@@ -1,4 +1,5 @@
-# Skim.py
+![alt favicon.png](https://github.com/gioelegentile/Skim.py/blob/master/src/main/resources/public/logo/logo.png?raw=true)
+
 Skimpy is a web application with which you can shorten URLs and view some statistics on the shortened URL, such us clicks, origin of clicks, top 10 shortened URLs clicked.
 
 It's builded with:
